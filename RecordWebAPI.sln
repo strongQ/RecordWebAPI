@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordWebAPI", "RecordWebAPI\RecordWebAPI.csproj", "{385A9B78-9F00-4609-8B35-81F3524B0DAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF.Core", "EF.Core\EF.Core.csproj", "{F6B6BEBC-47A6-4FC0-B2FC-3F31E3DF8055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF.Data", "EF.Data\EF.Data.csproj", "{46177E75-201C-40DE-A96A-B85EA53AF57E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{385A9B78-9F00-4609-8B35-81F3524B0DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{385A9B78-9F00-4609-8B35-81F3524B0DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{385A9B78-9F00-4609-8B35-81F3524B0DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B6BEBC-47A6-4FC0-B2FC-3F31E3DF8055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B6BEBC-47A6-4FC0-B2FC-3F31E3DF8055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B6BEBC-47A6-4FC0-B2FC-3F31E3DF8055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B6BEBC-47A6-4FC0-B2FC-3F31E3DF8055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46177E75-201C-40DE-A96A-B85EA53AF57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46177E75-201C-40DE-A96A-B85EA53AF57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46177E75-201C-40DE-A96A-B85EA53AF57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46177E75-201C-40DE-A96A-B85EA53AF57E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

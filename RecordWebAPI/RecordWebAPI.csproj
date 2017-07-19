@@ -116,6 +116,16 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EF.Core\EF.Core.csproj">
+      <Project>{f6b6bebc-47a6-4fc0-b2fc-3f31e3df8055}</Project>
+      <Name>EF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EF.Data\EF.Data.csproj">
+      <Project>{46177e75-201c-40de-a96a-b85ea53af57e}</Project>
+      <Name>EF.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
