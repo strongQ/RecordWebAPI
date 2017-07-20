@@ -18,11 +18,11 @@ namespace EF.Data
 
             //给ID配置自动增长
             this.Property(s => s.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            this.Property(s => s.UserName).IsRequired().HasColumnType("nvarchar2").HasMaxLength(25);
-            this.Property(s => s.Email).IsRequired().HasColumnType("nvarchar2").HasMaxLength(25);
+            this.Property(s => s.UserName).IsRequired().HasColumnType("varchar2").HasMaxLength(25);
+            this.Property(s => s.Email).IsRequired().HasColumnType("varchar2").HasMaxLength(25);
             this.Property(s => s.AddedDate);
             this.Property(s => s.ModifiedDate);
-            this.Property(s => s.IP);
+            this.Property(s => s.IP).HasColumnType("varchar2").HasMaxLength(25);
 
             //配置表
             this.ToTable("USER");
