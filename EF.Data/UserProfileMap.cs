@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EF.Data
 {
-    public class UserProfileMap: EntityTypeConfiguration<UserProfile>
+    public class UserProfileMap: EntityTypeConfiguration<MyUserProfile>
     {
         public UserProfileMap()
         {

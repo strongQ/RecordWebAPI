@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EF.Core
 {
-    public class User : BaseEntity
+    public class MyUser : BaseEntity
     {
         /// <summary>
         /// 用户名
@@ -26,6 +26,6 @@ namespace EF.Core
         /// <summary>
         /// 导航属性--用户详情
         /// </summary>
-        public virtual UserProfile UserProfile { get; set; }
+        public virtual MyUserProfile UserProfile { get; set; }
     }
 }

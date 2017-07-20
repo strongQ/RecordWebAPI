@@ -27,7 +27,7 @@ namespace RecordWebAPI
                 //创建数据库
                 db.Database.Create();
 
-                User userModel = new User()
+                MyUser userModel = new MyUser()
                 {
                     UserName = "Daniel",
                     Password = "123456",
@@ -36,7 +36,7 @@ namespace RecordWebAPI
                     IP = "1.1.1.1",
                     Email = "Daniel@163.com",
                     //一个用户，只有一个用户详情
-                    UserProfile = new UserProfile()
+                    UserProfile = new MyUserProfile()
                     {
                         FirstName = "曹",
                         LastName = "操",

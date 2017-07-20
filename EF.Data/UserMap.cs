@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace EF.Data
 {
-    public class UserMap:EntityTypeConfiguration<User>
+    public class UserMap:EntityTypeConfiguration<MyUser>
     {
         public UserMap()
         {
@@ -20,12 +20,13 @@ namespace EF.Data
             this.Property(s => s.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             this.Property(s => s.UserName).IsRequired().HasColumnType("varchar2").HasMaxLength(25);
             this.Property(s => s.Email).IsRequired().HasColumnType("varchar2").HasMaxLength(25);
+            this.Property(s => s.Password).IsRequired().HasColumnType("varchar2").HasMaxLength(25);
             this.Property(s => s.AddedDate);
             this.Property(s => s.ModifiedDate);
             this.Property(s => s.IP).HasColumnType("varchar2").HasMaxLength(25);
 
             //配置表
-            this.ToTable("USER");
+            this.ToTable("MYUSER");
         }
     }
 }

@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace EF.Core
 {
+    /// <summary>
+    /// 项目
+    /// </summary>
     public class Project:BaseEntity
     {
+       
         /// <summary>
         /// 项目名称
         /// </summary>
-        public string Name { get; set; }
+        public string PName { get; set; }
 
         /// <summary>
         /// 导航属性--Module

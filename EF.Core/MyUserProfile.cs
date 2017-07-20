@@ -9,7 +9,7 @@ namespace EF.Core
     /// <summary>
     /// 用户详情实体
     /// </summary>
-    public class UserProfile : BaseEntity
+    public class MyUserProfile : BaseEntity
     {
         /// <summary>
         /// 姓
@@ -34,6 +34,6 @@ namespace EF.Core
         /// <summary>
         /// 导航属性--User
         /// </summary>
-        public virtual User User { get; set; }
+        public virtual MyUser User { get; set; }
     }
 }
