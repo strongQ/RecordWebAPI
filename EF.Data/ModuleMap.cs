@@ -25,6 +25,8 @@ namespace EF.Data
             //配置关系【一个用户有多个订单，外键是CusyomerId】
             this.HasRequired(s => s.Project).WithMany(s => s.Modules).HasForeignKey(s => s.ProjectID).WillCascadeOnDelete(true);
 
+            //多对多关系实现要领，hasmany,然后映射生成第三个表，最后映射leftkey,rightkey
+            this.HasMany(s => s.Demands).WithMany(s => s.Modules).Map(s => s.ToTable("ModuleDemand").MapLeftKey("MODULEID").MapRightKey("DEMANDID"));
             //table  
             ToTable("MODULES");
         }

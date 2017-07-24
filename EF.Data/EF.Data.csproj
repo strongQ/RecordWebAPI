@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DemandMap.cs" />
     <Compile Include="EFDbContext.cs" />
     <Compile Include="ModuleMap.cs" />
     <Compile Include="ProjectMap.cs" />

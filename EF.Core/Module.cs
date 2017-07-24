@@ -25,5 +25,10 @@ namespace EF.Core
         /// 导航属性--项目
         /// </summary>
         public virtual Project Project { get; set; }
+
+        /// <summary>
+        /// 需求
+        /// </summary>
+        public virtual ICollection<Demand> Demands { get; set; }
     }
 }
