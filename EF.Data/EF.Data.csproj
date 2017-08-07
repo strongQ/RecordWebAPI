@@ -55,6 +55,11 @@
   <ItemGroup>
     <Compile Include="DemandMap.cs" />
     <Compile Include="EFDbContext.cs" />
+    <Compile Include="Migrations\201708071222563_InitialCreate.cs" />
+    <Compile Include="Migrations\201708071222563_InitialCreate.Designer.cs">
+      <DependentUpon>201708071222563_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModuleMap.cs" />
     <Compile Include="ProjectMap.cs" />
     <Compile Include="UserMap.cs" />
@@ -70,6 +75,11 @@
       <Project>{f6b6bebc-47a6-4fc0-b2fc-3f31e3df8055}</Project>
       <Name>EF.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708071222563_InitialCreate.resx">
+      <DependentUpon>201708071222563_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

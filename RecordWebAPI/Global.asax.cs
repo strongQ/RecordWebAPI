@@ -1,13 +1,10 @@
 ﻿using EF.Core;
 using EF.Data;
 using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
 using System.Web.Http;
-using System.Web.Routing;
 
+using System.Web.OData.Builder;
+using System.Web.OData.Extensions;
 namespace RecordWebAPI
 {
     public class WebApiApplication : System.Web.HttpApplication
@@ -20,17 +17,15 @@ namespace RecordWebAPI
 
         private void Test()
         {
-            //配置数据库初始化策略
-            Database.SetInitializer<EFDbContext>(new CreateDatabaseIfNotExists<EFDbContext>());
+           
             using (var db = new EFDbContext())
             {
-                //创建数据库
-                db.Database.Create();
+              
 
                 MyUser userModel = new MyUser()
                 {
-                    UserName = "Daniel",
-                    Password = "123456",
+                    UserName = "zhanqqi",
+                    Password = "1",
                     AddedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now,
                     IP = "1.1.1.1",
@@ -38,12 +33,12 @@ namespace RecordWebAPI
                     //一个用户，只有一个用户详情
                     UserProfile = new MyUserProfile()
                     {
-                        FirstName = "曹",
-                        LastName = "操",
+                        FirstName = "张",
+                        LastName = "奇",
                         AddedDate = DateTime.Now,
                         ModifiedDate = DateTime.Now,
                         IP = "1.2.3.45",
-                        Address = "宝安区 深圳 中国",
+                        Address = "中国荆门",
                     }
 
                 };

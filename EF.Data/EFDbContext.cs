@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EF.Core;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
@@ -11,10 +12,13 @@ namespace EF.Data
 {
     public class EFDbContext:DbContext
     {
-        public EFDbContext() : base("name=DbConnectionString") { }
+        public EFDbContext() : base("name=DbConnectionString")
+        {
+            Database.SetInitializer<EFDbContext>(new CreateDatabaseIfNotExists<EFDbContext>());
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("ZHANGQI");
+            modelBuilder.HasDefaultSchema("ZQ");
             {
                 var typesToRegister = Assembly.GetExecutingAssembly().GetTypes()
                .Where(type => !String.IsNullOrEmpty(type.Namespace))
@@ -27,7 +31,10 @@ namespace EF.Data
                 }
                 base.OnModelCreating(modelBuilder);
             }
+           
 
         }
+
+        public DbSet<MyUser> Users { get; set; }
     }
 }
