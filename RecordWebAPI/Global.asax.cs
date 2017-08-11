@@ -2,19 +2,20 @@
 using EF.Data;
 using System;
 using System.Web.Http;
+using System.Web.Http.OData.Builder;
 
-using System.Web.OData.Builder;
-using System.Web.OData.Extensions;
 namespace RecordWebAPI
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
         {
+            
+            
             GlobalConfiguration.Configure(WebApiConfig.Register);
             Test();
         }
-
+        
         private void Test()
         {
            
