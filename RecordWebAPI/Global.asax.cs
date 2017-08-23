@@ -2,7 +2,7 @@
 using EF.Data;
 using System;
 using System.Web.Http;
-using System.Web.Http.OData.Builder;
+
 
 namespace RecordWebAPI
 {
@@ -13,7 +13,7 @@ namespace RecordWebAPI
             
             
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            Test();
+           // Test();
         }
         
         private void Test()

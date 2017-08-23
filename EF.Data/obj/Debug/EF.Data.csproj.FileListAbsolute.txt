@@ -1,0 +1,16 @@
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\EF.Data.dll.config
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\EF.Data.dll
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\EF.Data.pdb
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\EF.Core.dll
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\EntityFramework.dll
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\EF.Core.pdb
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\EntityFramework.xml
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\obj\Debug\EF.Data.csprojResolveAssemblyReference.cache
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\obj\Debug\EF.Data.Migrations.InitialCreate.resources
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\obj\Debug\EF.Data.csproj.GenerateResource.Cache
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\obj\Debug\EF.Data.dll
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Data\obj\Debug\EF.Data.pdb

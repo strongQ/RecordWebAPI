@@ -16,7 +16,7 @@ namespace EF.Data
 
             this.Property(s => s.FirstName).HasMaxLength(20).HasColumnType("varchar2").IsRequired();
             this.Property(s => s.LastName).HasMaxLength(20).HasColumnType("varchar2").IsRequired();
-            this.Property(s => s.Address).HasMaxLength(100).HasColumnType("nvarchar2").IsRequired();
+            this.Property(s => s.Address).HasMaxLength(100).HasColumnType("nvarchar2");
             this.Property(s => s.PhoneNumber).HasMaxLength(20).HasColumnType("varchar2");
             this.Property(s => s.AddedDate);
             this.Property(s => s.ModifiedDate);

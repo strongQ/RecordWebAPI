@@ -1,0 +1,3 @@
+Enable-Migrations   启动数据库迁移技术
+
+Update-Database -Verbose
