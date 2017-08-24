@@ -14,7 +14,16 @@ namespace Services
         public static IEdmModel GenerateEdmModel()
         {
             var builder = new ODataConventionModelBuilder();
-            builder.EntitySet<MyUser>("User");
+           
+              builder.EntitySet<MyUser>("Users");
+            //FunctionConfiguration getUser = builder.Function("GetUser");
+            //getUser.Parameter<string>("UserName");
+            //getUser.ReturnsCollectionFromEntitySet<MyUser>("User");
+            builder.Namespace = "UserService";
+            builder.EntityType<MyUser>().Collection.Function("GetMaxID").Returns<int>();
+            builder.EntityType<MyUser>().Collection.Function("GetMaxName").Returns<Module>();
+
+            builder.Function("GetSome").Returns<double>().Parameter<int>("ID");
             return builder.GetEdmModel();
         }
     }

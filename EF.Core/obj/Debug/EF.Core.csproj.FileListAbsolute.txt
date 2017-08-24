@@ -2,3 +2,4 @@ C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Core\bin\Debug\EF.Core.dll
 C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Core\bin\Debug\EF.Core.pdb
 C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Core\obj\Debug\EF.Core.dll
 C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Core\obj\Debug\EF.Core.pdb
+C:\Users\zgk\Desktop\文档\RecordWebAPI\EF.Core\obj\Debug\EF.Core.csprojResolveAssemblyReference.cache

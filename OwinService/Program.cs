@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.OData.Batch;
 using System.Web.OData.Extensions;
 
 namespace OwinService
@@ -33,9 +34,9 @@ namespace OwinService
             // Action selector and odata media type formatters will be registered in per-controller configuration only
             config.MapODataServiceRoute(
                 routeName: "OData",
-                routePrefix: null,
+                routePrefix: "Odata",
                 model:  Services.Startup.GenerateEdmModel());
-
+            config.Routes.MapHttpRoute("api", "api/{controller}");
             appBuilder.UseWebApi(config);
 
             AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Directory.GetCurrentDirectory());
